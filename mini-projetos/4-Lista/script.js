@@ -21,15 +21,17 @@ let listUsers = [
     }
 ]
 
-let user = document.querySelector('#list__users')
+let user = document.querySelector('.list__users')
+let allUsers = ''
 listUsers.forEach(user => {
-    user.innerHTML = `
+    allUsers += `
         <img src="${users.image}" alt="user list" class="list__img">
-        <div class="user-data">
+        <div class="list__text">
             <h2 class="list__name">${users.nome}</h2>
             <p class="list__address">${users.endereco}</p>
         </div>
         <hr>
     `
 })  
+user.innerHTML = allUsers
     

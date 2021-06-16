@@ -12,8 +12,8 @@
 .card {
     width: 300px;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 1px 9px -4px rgba(0,0,0,0.75); 
-    box-shadow: 1px 1px 9px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 9px -4px #000000bf; 
+    box-shadow: 1px 1px 9px -4px #000000bf;
 }
 
 .card__header {    
@@ -45,16 +45,26 @@
 
 .list__users{
     display: flex;
+    flex-direction: column;
     margin: 10px;
+}
+.list__junc {
+    display: flex;
 }
 .list__img {  
     border-radius: 50%;
     width: 60px;
     height: 60px;
 }
+.list__text {
+    display: flex;
+    flex-direction: column;
+}
 .list__name {
     font-size: 16px;
     padding-left: 15px;
+    margin: 0;
+    margin-top: 10px;
 }
 .list__address {
     font-size: 12px;

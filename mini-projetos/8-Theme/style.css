@@ -1,0 +1,46 @@
+#body {
+    margin: 0;
+    padding: 0;
+    transition-duration: 1s;
+}
+
+.dark {
+    background-color: #292C35;  
+    flex-direction: row-reverse;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    background-color: rgb(14, 14, 14);
+    padding: 5px 8px;
+    width: 85px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.fas {
+    font-size: 30px;
+}
+.btn .fa-moon {
+    color: #ffff00;
+}
+.btn .fa-sun {
+    display: none;
+    color: rgb(255, 187, 0);
+}
+.btn.dark .fa-moon {
+    display: none;
+}
+.btn.dark .fa-sun {
+    display: block;
+}
+

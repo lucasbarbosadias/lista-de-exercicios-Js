@@ -6,13 +6,13 @@ const ageFilter = days => {
     while(days > 0) {
         if (days >= 365){
             days -= 365
-            y++
+            y ++
         } else if (days >= 30) {
             days -= 30
-            m++
+            m ++
         } else {
             days -= 1
-            d++
+            d ++
         }
     }
     return `Sua idade é de ${y} anos, ${m} meses e ${d} dias.`
